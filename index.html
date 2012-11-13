@@ -30,9 +30,11 @@
           <h3>About</h3>
 
 <p>
-This project is aimed at using the Network Rail Data Feeds to help learn some new technologies through an area I am interested in.
+This project is aimed at using the <a href="https://datafeeds.networkrail.co.uk">Network Rail Data Feeds</a> to help learn some new technologies through an area I am interested in.
 <br />
 I originally intended to do something with the Live Departure Board Web Service until National Rail made it pay-only.
+<br />
+This site should not be relied on as an accurate source, although the data comes from Network Rail, I cannot guarantee the site will have interpreted the data correctly.
 <p>
 
 <h3>Web Client Technologies Used</h3>
@@ -40,10 +42,12 @@ I originally intended to do something with the Live Departure Board Web Service 
 <p>
 The web client uses:
 <ul>
-<li>HTML 5 based around the twitter bootstrap template</li>
+<li>HTML 5 based around the <a href="http://twitter.github.com/bootstrap/">twitter bootstrap framework</a></li>
 <li>websockets to live track trains</li>
-<li>Google Maps API to display maps</li>
-<li>is hosted on windows azure web sites (free model at present)</li>
+<li><a href="http://www.jquery.com">jQuery</a></li>
+<li><a href="http://www.knockoutjs.com/">Knockout.js</a></li>
+<li><a href="https://developers.google.com/maps/">Google Maps API</a> to display maps</li>
+<li>is hosted on <a href="https://www.windowsazure.com">windows azure</a> web sites (free model at present)</li>
 </ul>
 </p>
 
@@ -52,8 +56,8 @@ The web client uses:
 <p>
 The server side uses:
 <ul>
-<li>Alchemy Websockets to handle websocket connections</li>
-<li>Apache NMS Stomp (slighlty modified) to connect to the rail data feeds</li>
+<li><a href="http://alchemywebsockets.net/">Alchemy Websockets</a> to handle websocket connections</li>
+<li><a href="http://activemq.apache.org/nms/">Apache NMS</a> Stomp (slighlty modified) to connect to the rail data feeds</li>
 <li>ASP.NET MVC Web API for serving data to the web client</li>
 <li>MySQL legacy database (stored on old web host)</li>
 <li>SQL Server 2008 R2</li>
@@ -90,8 +94,8 @@ Thanks, <a href="http://www.blueghost.co.uk">Michael Pritchard</a>
         <aside id="sidebar">
           <a href="http://www.trainnotifier.co.uk">
             View website
-          </a>
-<a href="https://github.com/blueghostuk/trainnotifier-server">View server code</a>
+          </a><br />
+<a href="https://github.com/blueghostuk/trainnotifier-server">View server code</a><br />
 <a href="https://github.com/blueghostuk/trainnotifier-webclient">View client code</a>
 
           <p>This page uses the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
