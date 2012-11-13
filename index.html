@@ -33,6 +33,8 @@
 
 <p>
 This project is aimed at using the Network Rail Data Feeds to help learn some new technologies through an area I am interested in.</p>
+<br />
+I originally intended to do something with the Live Departure Board Web Service until National Rail made it pay-only.
 <p>
 
 <h3>Web Client Technologies Used</h3>
@@ -52,7 +54,7 @@ The web client uses:
 <p>
 The server side uses:
 <ul>
-<li>the Alchemy Websockets to handle websocket connections</li>
+<li>Alchemy Websockets to handle websocket connections</li>
 <li>Apache NMS Stomp (slighlty modified) to connect to the rail data feeds</li>
 <li>ASP.NET MVC Web API for serving data to the web client</li>
 <li>MySQL legacy database (stored on old web host)</li>
@@ -60,6 +62,20 @@ The server side uses:
 <li>Server components are hosted on Hyper-V virtual machines on my HP MicroServer</li>
 </ul>
 </p>
+
+<h3>About me</h3>
+I started to do similar stuff years ago (dating back to 2005) using the BBC backstage data to generate a google maps web app and google earth feeds.
+<br />
+This website is still available but doesnt really work any more, see <a href="http://bbc.blueghost.co.uk">http://bbc.blueghost.co.uk</a>
+
+<h3>Thanks</h3>
+Thanks should go to Network Rail for releasing this data, and for the community who helped get them to release it.
+<br />
+See <a href="http://wiki.openraildata.info">http://wiki.openraildata.info</a> for more info.
+<br />
+Thanks should also go to Jonathan Brown who originally gave me a list of national rail stations and lat/lon values
+that I imported into a MySQL database in 2005, sadly the <a href="http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/148131/page/0/fpart/3/vc/1">link</a> to the discussion on the Keyhole BBS boards is now broke.
+I intent to update the list at some point using the open data now available.
 
 <h3>Contact</h3>
 
