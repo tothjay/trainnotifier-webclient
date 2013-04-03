@@ -1,107 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <title>Trainnotifier.co.uk by blueghostuk</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
-    <header>
-      <div class="inner">
+
+      <header>
         <h1>Trainnotifier.co.uk</h1>
-        <h2></h2>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/blueghostuk/trainnotifier-webclient" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/blueghostuk/trainnotifier-webclient/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/blueghostuk/trainnotifier-webclient/tarball/master" class="button">TAR</a></li>
+          </ul>
         </div>
-    </header>
+      </div><!-- end banner -->
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>About</h3>
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>About</h3>
 
-<p>
-This project is aimed at using the <a href="https://datafeeds.networkrail.co.uk">Network Rail Data Feeds</a> to help learn some new technologies through an area I am interested in.
-<br />
-I originally intended to do something with the Live Departure Board Web Service until National Rail made it pay-only.
-<br />
-This site should not be relied on as an accurate source, although the data comes from Network Rail, I cannot guarantee the site will have interpreted the data correctly.
-<p>
+<p>This project is aimed at using the <a href="https://datafeeds.networkrail.co.uk/">Network Rail Data Feeds</a> to help learn some new technologies through an area I am interested in. 
+I originally intended to do something with the Live Departure Board Web Service until National Rail made it pay-only. 
+This site should not be relied on as an accurate source, although the data comes from Network Rail, I cannot guarantee the site will have interpreted the data correctly.</p>
 
 <h3>Web Client Technologies Used</h3>
 
-<p>
-The web client uses:
-<ul>
-<li>HTML 5 based around the <a href="http://twitter.github.com/bootstrap/">twitter bootstrap framework</a></li>
-<li>websockets to live track trains</li>
-<li><a href="http://www.jquery.com">jQuery</a></li>
-<li><a href="http://www.knockoutjs.com/">Knockout.js</a></li>
-<li><a href="https://developers.google.com/maps/">Google Maps API</a> to display maps</li>
-<li>is hosted on <a href="https://www.windowsazure.com">windows azure</a> web sites (free model at present)</li>
-</ul>
-</p>
+<p>The web client uses:</p>
 
-<h3>Server Technologies Used</h3>
-
-<p>
-The server side uses:
 <ul>
-<li><a href="http://alchemywebsockets.net/">Alchemy Websockets</a> to handle websocket connections</li>
-<li><a href="http://activemq.apache.org/nms/">Apache NMS</a> Stomp (slighlty modified) to connect to the rail data feeds</li>
+<li>HTML 5 based around <a href="http://twitter.github.com/bootstrap/">bootstrap</a>
+</li>
+<li>Theme from <a href="http://bootswatch.com/">Bootswatch</a>
+</li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="http://knockoutjs.com/">knockout</a></li>
+<li><a href="https://developers.google.com/maps/">Google Maps API</a></li>
+<li>
+<a href="https://www.windowsazure.com/en-us/">Windows Azure</a> <a href="https://www.windowsazure.com/en-us/home/scenarios/web-sites/">Web Sites</a>
+</li>
+</ul><h3>Server Technologies Used</h3>
+
+<p>The server side uses:</p>
+
+<ul>
+<li>
+<a href="http://alchemywebsockets.net/">Alchemy Websockets</a> to handle websocket connections</li>
+<li>
+<a href="http://activemq.apache.org/nms/">Apache NMS</a> Stomp (slighlty modified) to connect to the rail data feeds</li>
 <li>ASP.NET MVC Web API for serving data to the web client</li>
 <li>SQL Server 2008 R2</li>
 <li>Server components are hosted on Hyper-V virtual machines on my HP MicroServer</li>
-</ul>
-</p>
+</ul><h3>About me</h3>
 
-<h3>About me</h3>
-I started to do similar stuff years ago (dating back to 2005) using the BBC backstage data to generate a google maps web app and google earth feeds.
-<br />
-This website is still available but doesnt really work any more, see <a href="http://bbc.blueghost.co.uk">http://bbc.blueghost.co.uk</a>
+<p>I started to do similar stuff years ago (dating back to 2005) using the BBC backstage data to generate a google maps web app and google earth feeds. 
+This website is still available but doesnt really work any more, see <a href="http://bbc.blueghost.co.uk">http://bbc.blueghost.co.uk</a></p>
 
 <h3>Thanks</h3>
-Thanks should go to Network Rail for releasing this data, and for the community who helped get them to release it.
-<br />
-See <a href="http://wiki.openraildata.info">http://wiki.openraildata.info</a> for more info.
-<br />
-Thanks should also go to Jonathan Brown who originally gave me a list of national rail stations and lat/lon values
-that I imported into a MySQL database in 2005, sadly the <a href="http://bbs.keyhole.com/ubb/showflat.php/Cat/0/Number/148131/page/0/fpart/3/vc/1">link</a> to the discussion on the Keyhole BBS boards is now broke.
-I intent to update the list at some point using the open data now available.
+
+<p>Thanks should go to Network Rail for releasing this data, and for the community who helped get them to release it. 
+See <a href="http://wiki.openraildata.info">the wiki</a> for more info. 
+Thanks should also go to Jonathan Brown who originally gave me a list of national rail stations and lat/lon values that I imported into a MySQL database in 2005, sadly the link to the discussion on the Keyhole BBS boards is now broke. I intent to update the list at some point using the open data now available.</p>
 
 <h3>Contact</h3>
 
-<p>You can contact me on twitter <a href="https://twitter.com/blueghostuk" class="twitter-follow-button" data-show-count="false">Follow @blueghostuk</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</p>
-<p>
-Thanks, <a href="http://www.blueghost.co.uk">Michael Pritchard</a>
-</p>
-
-
-        </section>
-
-        <aside id="sidebar">
-          <a href="http://www.trainnotifier.co.uk">
-            View website
-          </a><br />
-<a href="https://github.com/blueghostuk/trainnotifier-server">View server code</a><br />
-<a href="https://github.com/blueghostuk/trainnotifier-webclient">View client code</a>
-
-          <p>This page uses the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p>You can contact me on twitter <a href="https://twitter.com/blueghostuk">@blueghostuk</a> or <a href="https://twitter.com/trainnotifier">@trainnotifier</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/blueghostuk">blueghostuk</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
-  
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
